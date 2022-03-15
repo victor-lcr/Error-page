@@ -1,0 +1,79 @@
+html,
+body {
+    font-size: 12px;
+    font-family: 微软雅黑, microsoft yahei;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    background: #999
+}
+
+body {
+    overflow: hidden
+}
+
+.msg-mask {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #111;
+    height: 100%;
+    width: 100%;
+    z-index: 1000
+}
+
+.msg-text {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    top: 50%;
+    color: #fff
+}
+
+.dot {
+    display: inline-block;
+    font-size: 0;
+    line-height: 0;
+    width: 8px;
+    height: 8px;
+    background-color: #34b5ff;
+    vertical-align: middle;
+    margin-right: 4px
+}
+
+@keyframes dot {
+    0% {
+        -webkit-transform: scale(1, 1);
+        transform: scale(1, 1)
+    }
+
+    5% {
+        -webkit-transform: scale(1.2, 1.2);
+        transform: scale(1.2, 1.2)
+    }
+
+    10% {
+        -webkit-transform: scale(1.4, 1.4);
+        transform: scale(1.4, 1.4)
+    }
+
+    15% {
+        -webkit-transform: scale(1.8, 1.8);
+        transform: scale(1.8, 1.8)
+    }
+
+    20% {
+        -webkit-transform: scale(1.4, 1.4);
+        transform: scale(1.4, 1.4)
+    }
+
+    30% {
+        -webkit-transform: scale(1, 1);
+        transform: scale(1, 1)
+    }
+
+    100% {
+        -webkit-transform: scale(1, 1);
+        transform: scale(1, 1)
+    }
+}
